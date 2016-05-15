@@ -1,5 +1,4 @@
-# Twicorder
-## A simple twitter recorder using Tweepy
+# Twicorder - A simple twitter recorder using Tweepy
 
 ## What is this project about?
 This project is basically a utility that I plan to use for collecting data from twitter. The code, hopefully, will
