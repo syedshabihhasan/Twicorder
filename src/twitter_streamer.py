@@ -22,22 +22,14 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 '''
 
-import tweepy
+from twython import TwythonStreamer
 
 
-class TwitterStreamListener(tweepy.StreamListener):
+class TwitterStreamListener(TwythonStreamer):
+    def on_success(self, data):
+        if 'text' in data:
+            print data['text'].encode('utf-8')
 
-    def on_data(self, raw_data):
-        print raw_data
-        return True
-
-    def on_error(self, status_code):
-        print 'Error: ', status_code
-        return
-
-    def on_timeout(self):
-        print 'Timeout!'
-        return
-
-    def __init__(self):
-        pass
+    def on_error(self, status_code, data):
+        print status_code
+        self.disconnect()
