@@ -7,5 +7,5 @@ include the following capabilities:
  - [ ] Handling rate limiting issues
  - [ ] Storing all the data in a CSV, or some other form (TBD)
 
- ## Organization of the code
- All the relevant stuff should be in the the [source folder](https://github.com/syedshabihhasan/Twicorder/tree/master/src).
+## Organization of the code
+All the relevant stuff should be in the the [source folder](https://github.com/syedshabihhasan/Twicorder/tree/master/src).
